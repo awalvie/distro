@@ -15,7 +15,6 @@ func GenerateUID() string {
 	now := time.Now().UnixNano()
 
 	// Generate a random number
-	rand.Seed(time.Now().UnixNano())
 	randomNum := rand.Intn(1000)
 
 	// Combine the current time and random number
