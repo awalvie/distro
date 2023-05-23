@@ -58,4 +58,15 @@ to operate even in the face of network partitions.
 
 ### Attempts
 
-- Generate a unique id using `time.Now().UnixNano()`
+- Generate a unique id using:
+
+```go
+	// Get the current time in UnixNano format
+	now := time.Now().UnixNano()
+
+	// Generate a random number
+	randomNum := rand.Intn(1000)
+
+	// Combine the current time and random number
+	id := strconv.FormatInt(now, 10) + strconv.Itoa(randomNum)
+```
