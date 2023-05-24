@@ -2,7 +2,6 @@
   "src": "c1",
   "dest": "n1",
   "body": {
-    "type": "broadcast",
-    "msg_id": 1
+    "type": "read"
   }
 }
